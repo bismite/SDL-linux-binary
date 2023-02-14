@@ -13,8 +13,7 @@ jobs:
           sudo apt install libgl-dev clang cmake
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: mkdir -p tmp/bin tmp/include tmp/lib tmp/licenses
-      - run: make -f Makefile.linux.mk
+      - run: mkdir -p build tmp
       - run: ./make_sdl.sh
       - run: ./make_sdl_image.sh
       - run: ./make_sdl_mixer.sh
