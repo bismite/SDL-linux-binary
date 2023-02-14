@@ -22,8 +22,6 @@ jobs:
       - name: Upload libs
         uses: svenstaro/upload-release-action@2.4.1
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: tmp/SDL-linux-binary.tgz
           asset_name: SDL-linux-binary-${{github.ref_name}}.tgz
-          tag: ${{ github.ref }}
           overwrite: true
