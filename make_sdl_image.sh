@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PREFIX="$(pwd)/tmp"
+export PATH=$(pwd)/tmp/bin:$PATH
 mkdir -p build/sdl_image
 rm -rf build/SDL2_image-2.6.3
 tar xf SDL2_image-2.6.3.tar.gz -C build

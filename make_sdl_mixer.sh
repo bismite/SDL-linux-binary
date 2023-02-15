@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PREFIX="$(pwd)/tmp"
+export PATH=$(pwd)/tmp/bin:$PATH
 mkdir -p build/sdl_mixer
 rm -rf build/SDL2_mixer-2.6.3
 tar xf SDL2_mixer-2.6.3.tar.gz -C build
